@@ -1,0 +1,80 @@
+Link has multiple requirements
+1-href refers to where the css file is located in the file directory
+2-rel refers to the relationship with the html file usually stylesheet
+3-type means text/css
+
+How to create tables in HTML:
+
+Tables can be divided into three elements
+1-Table head
+2-Table Body
+3-Table Footer
+
+Table head
+        <table> </table>
+Syntax: <thead> </thead>
+        <tr> Table Row </tr>
+        <th> Table head </th> - Contains the headings of the columns
+
+Table Body:
+        <tbody> </tbody>
+        <tr> Table Row </tr>
+        <td> Table data </td> - Contains the data in the table. Use colspan to span two columns
+                                Use rowspan to span two rows
+
+Table Footer
+        <tfoot> </tfoot>
+
+Within HTML, we can add multiple classes to an HTML's element class attribute by seperating
+with a space
+        <div class="bold green"> </div>
+        Here in this div, we are adding two classes bold and green and we can style them differently
+
+Text-transform can be used to transform text into uppercase or lowercase
+
+If an HTML element needs to styled uniquely no matter what class is applied to it 
+We use id for declaring it
+        <h1 id="" class="bold"> </h1>
+For manipulating it, we use # in CSS
+
+<h1 id="article-title" class="title uppercase">
+
+In this example, we are uniquely styling via id and adding the CSS elements attributed to title and uppercase
+While classes are meant to be used many times, an ID is meant to style only one element.
+
+classes can be .bold 
+classes can be .uppercase
+classes can be .blue
+
+With an html we can use <h1 class="bold blue uppercase> </h1>
+
+
+Specificity:
+This is a way in CSS to holder precedence over other element attributes
+        ID's are most Specific
+        Classes come next
+        Followed last by tags
+<h1 id="green" class="red"></h1>
+
+the css :
+    #green {
+        color: green
+    }
+    .red {
+        color: red
+    }
+    h1{
+        color:blue
+    }
+In this case, the H1 will be green since its most Specific
+
+When writing CSS rules, it’s possible to require an HTML element to have two 
+or more CSS selectors at the same time.
+
+    This is done by combining multiple selectors, which we will refer to as chaining. 
+    For instance, if there was a .special class for h1 elements, the CSS would look like:
+
+h1.special {
+
+}
+
