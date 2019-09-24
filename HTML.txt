@@ -78,3 +78,59 @@ h1.special {
 
 }
 
+Chaining and Specificity:
+
+So in HTML we can define a paragraph or any element with a class and then use
+CSS to add styling to it
+
+However, we can also chain elements together and apply a more specific CSS style to them.
+
+For example
+
+p {
+        color: blue
+}
+
+makes the color blue for all paragraphs within the entire document
+
+However,
+
+.class_name p {
+        color: red;
+}
+
+By chaining in the above situation, the paragraph nested inside the class_name will be turned
+into red
+
+This is called chaining and Specificity
+
+If you use !important, it will override any specific attributes. It will override any style 
+no matter how specific it is.
+
+To apply CSS to multiple classes, use
+
+h1, p {
+        color: green;
+}
+
+                        CSS by tag p h1 h5 etc.
+                        CSS by id #
+                        CSS by class .
+                        CSS select all *
+
+        Font-family: Arial, Cursive, Times-New-Roman
+        font-size: 18px
+        font-weight: bold/normal - Controls how bold or thin text appears
+
+        text-align: left/center/right - By default it appears to the left of the browser
+        We can change it via using the 3 different values
+        It aligns text to the element that holds it, i.e its parent
+
+        Color-Two different types
+        Foreground color - color of text
+        Background color - color of Background
+
+        Opacity. 1 represents 100% opaque. 0 represents None
+        The background-image property will set the element’s background to display an image.
+
+        Syntax: background-image: url('https://www.example.com/image.jpeg')
