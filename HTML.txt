@@ -135,4 +135,108 @@ h1, p {
 
         Syntax: background-image: url('https://www.example.com/image.jpeg')
 
-Setting it up:
+
+# Font-weight
+
+Font weight allows us to decide whether we want an element's property to be bold or not
+
+        # Font weight can also be a numeric value ranging from 100 - 900
+        # 400 is the default
+        # 700 denotes a bold font weight
+        # 300 denotes a light font weight
+
+# Font style
+
+        #You can use font style to set the text to become italicized
+
+
+        When selecting two classes to modify in CSS
+        We use .className then .className {
+
+        }
+
+You can use em values: this allows the spacing to remain relative to the font-size
+
+word-spacing can be used to style how much space you want between text of a paragraph i.e
+        word-spacing: 5 em means 5 * the spacing of the font
+        Usually em refers to the font size which by default is 16px
+
+Letter spacing refers to how much space you want between letters
+Again you can use em to decide how much space you want between the letters
+
+        # We use text transform to change the text from uppercase and lowercase
+        # text-transform: uppercase
+        # text-transform: lowercase
+
+The text-align property can be set to one of the following three values:
+
+        left - aligns text to the left hand side of the browser.
+        center - centers text.
+        right - aligns text to the right hand side of the browser.
+
+Text decoration:
+
+h1 {
+  text-decoration: overline;
+  display: block
+}
+
+
+h2 {
+  text-decoration: line-through;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+h4 {
+  text-decoration: underline overline;
+}
+
+        # display : block sets up whether we want to set up a vertical block or a horizontal block to represent the information
+        # display: inline-block sets up a horizontal block
+
+Line-height:
+
+Think of line height as the number of enters you press to get to a difference in height between two lines of text
+
+Example 
+
+Example
+
+
+Example
+
+Line-height: 1.5
+A unitless number, such as 1.2. 
+This number is an absolute value that will compute the line height as a 
+ratio of the font size. A unitless number is preferred since if the height of 
+the element changes, it is easy to change the height dynamically
+
+Fall-back fonts:
+
+        Most computers come with a small font set including Arial, Times New Roman
+        
+
+h1 {
+  font-family: "Garamond", "Times", serif;
+}
+
+This ^ above is called a fall-back font
+It means use Garamond. If it is not available then use Times if that is not available
+Then use serif from the PC
+
+
+        use <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+        within head of the html document to add google fonts to your project
+
+
+Font-Face 1:
+        font-weight: bold 100 - 900
+        font-style: italicized, underline etc
+        line-height: vertical spacing between lines of text
+        google fonts can be used with the link tag
+        @font-face can also be used
+        word-spacing: how far apart words are
+        letter-spacing: how far apart letters are
